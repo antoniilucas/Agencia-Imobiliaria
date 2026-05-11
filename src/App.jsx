@@ -1,9 +1,16 @@
+import Header from "./components/Header";
+import Global from "./components/styles/Global";
+import Banner from "./components/Banner";
+import Home from "./pages/Home";
 
 function App() {
   return (
-      <div>
-        <h2>Hello world</h2>
-      </div>
+    <div>
+      <Header />
+      <Banner />
+      <Home />
+      <Global />
+    </div>
   );
 }
 

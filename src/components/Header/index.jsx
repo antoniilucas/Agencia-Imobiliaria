@@ -1,7 +1,20 @@
-import React from 'react'
+import React from 'react';
+import LogoImg from '../../assets/logo.png';
+import { Container, Logo, Menu } from './styles';
 
-export default function index() {
+const Header = () => {
   return (
-    <div>index</div>
-  )
-}
+    <Container>
+      <Logo>
+        <img src={LogoImg} alt="Logo" />
+      </Logo>
+      <Menu>
+        <ul>
+          <li><span>Cadastro/Login</span></li>
+        </ul>
+      </Menu>
+    </Container>
+  );
+};
+
+export default Header;
