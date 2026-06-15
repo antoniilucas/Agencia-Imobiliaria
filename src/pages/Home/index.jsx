@@ -1,14 +1,19 @@
 import React from 'react'
+import Card from '../../components/Card'
 import { Header, Wrapper } from './styles'
 
 export default function Home() {
+    let Cards = []
+    for (let i = 0; i < 4; i++){
+        Cards.push(<Card key={i} />)
+    }
     return (
         <div>
             <Header>
-                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, provident cumque hic vero mollitia, non minima sunt doloribus autem ex quam commodi nihil itaque veritatis vel reiciendis pariatur possimus? Maxime!</h2>
+                <h2>Find the property of your dreams!</h2>
             </Header>
             <Wrapper>
-                <h2>cards</h2>
+                {Cards}
             </Wrapper>
         </div>
     )

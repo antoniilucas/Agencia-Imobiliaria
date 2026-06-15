@@ -1,14 +1,18 @@
 import Header from "./components/Header";
-import Global from "./components/styles/Global";
-import Banner from "./components/Banner";
-import Home from "./pages/Home";
+import Global from "./styles/Global";
+// import Banner from "./components/Banner";
+// import Home from "./pages/Home";
+import Footer from "./components/Footer";
+import Imobi from "./pages/Imobi";
 
 function App() {
   return (
     <div>
       <Header />
-      <Banner />
-      <Home />
+      <Imobi />
+      {/* <Banner />
+      <Home /> */}
+      <Footer />
       <Global />
     </div>
   );

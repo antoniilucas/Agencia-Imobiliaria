@@ -13,6 +13,8 @@ export default createGlobalStyle`
     --gray: #d9d9d9;
     --blue: #4766ff;
     --white: #fff;
+    --gray-light: #e5e1dc;
+    --shade: #efefef;
   }
 
    body {
@@ -23,7 +25,7 @@ export default createGlobalStyle`
     font-weight: 400;
 }
 
-  ul {
+  ul, nav {
     list-style: none;
  }
 
