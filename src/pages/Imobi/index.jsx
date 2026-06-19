@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react'
 import { Container, Description, Left, Profile, ProfileContact, ProfileDescription, ProfileFormContact, ProfileImg, Right, Thumb } from './styles'
 import TopBanner from '../../components/TopBanner'
+import Input from '../../components/Input'
+import TextArea from '../../components/TextArea'
+import Button from '../../components/Button'
 
 export default function Imobi() {
   return (
@@ -35,10 +38,10 @@ export default function Imobi() {
           <ProfileFormContact>
             <h3>Entre em Contato</h3>
             <form>
-              <input type="text" placeholder='Nome:' />
-              <input type="email" placeholder='Email:' />
-              <textarea name="" id="" cols="30" rows="10" placeholder='Mensagem:'></textarea>
-              <button>Enviar Mensagem</button>
+              <Input type="text" placeholder='Nome:' />
+              <Input type="email" placeholder='Email:' />
+              <TextArea placeholder='Mensagem:' />
+              <Button type='submit'>Enviar Mensagem</Button>
             </form>
           </ProfileFormContact>
         </Right>
